@@ -5,7 +5,7 @@
 		
 		esri.dijit._PopupRenderer.prototype._showImage = function(b)
 		{
-			console.log(b)
+			
 			var maxWidth = typeof(b.maxW) != "undefined" ? b.maxW : "200"
 			var maxHeight = typeof(b.maxH) != "undefined" ? b.maxH : "150"
 			
@@ -22,7 +22,7 @@
             p.create("img", {
                 className: "esriPopupMediaImage",
                 src: b.sourceURL,
-				style: "max-width:"+maxWidth+"px!important;max-height:"+maxHeight+"px!important"//"max-width:" +  + "px !important;"
+				style: "max-width:"+maxWidth+"px!important;max-height:"+maxHeight+"px!important"
             }, a || this._mediaFrame);
             var f = k.query(".esriPopupMediaImage", this._mediaFrame)[0],
                 d = this,
